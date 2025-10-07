@@ -9,6 +9,7 @@ const navItems = [
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
   { href: "#resume", label: "Resume" },
+  // { href: "#testimonial", label: "Testimonial" },
 ];
 
 export function Navigation() {

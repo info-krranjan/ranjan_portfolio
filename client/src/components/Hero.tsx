@@ -78,7 +78,7 @@ export function Hero() {
         >
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4"
+            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4 mt-4"
             data-testid="hero-greeting"
           >
             Hi, I'm
@@ -89,6 +89,20 @@ export function Hero() {
             className="text-5xl sm:text-7xl lg:text-8xl font-black mb-6 gradient-text"
             data-testid="hero-name"
           >
+            {/* ............. */}
+            {/* Profile Picture */}
+          <motion.div
+            variants={itemVariants}
+            className="flex justify-center mb-6"
+          >
+            <img
+              src="/ranjan1.jpg" // Place your image in the public folder as 'profile.jpg'
+              alt="Ranjan Kumar Verma"
+              className="w-40 h-40 rounded-full object-cover border-4 border-primary shadow-lg"
+              data-testid="hero-profile-pic"
+            />
+          </motion.div>
+            {/* .............. */}
             Ranjan Kumar Verma
           </motion.h1>
 

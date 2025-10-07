@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Github, ExternalLink, Folder, Star, GitFork } from "lucide-react";
-import { useGitHubProjects } from "../hooks/useGitHubProjects";
+// import { useGitHubProjects } from "../hooks/useGitHubProjects";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -21,7 +21,7 @@ const featuredProjects = [
   {
     name: "College Management System",
     description: "Comprehensive platform for managing student records, courses, attendance, and report generation. Developed during internship at Techstern Solutions.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image: "/cms.png",
     technologies: ["React", "Node.js", "MongoDB", "REST API"],
     githubUrl: "https://github.com/info-krranjan",
     liveUrl: "#",
@@ -191,7 +191,7 @@ function ProjectCard({ project, index, type = "github" }: {
 export function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const { data: githubProjects, isLoading, error } = useGitHubProjects();
+  // const { data: githubProjects, isLoading, error } = useGitHubProjects();
 
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900" data-testid="projects-section">
@@ -225,7 +225,7 @@ export function Projects() {
         </div>
 
         {/* GitHub Projects */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -273,7 +273,7 @@ export function Projects() {
               </p>
             </div>
           )}
-        </motion.div>
+        </motion.div> */}
 
         {/* View More Projects Button */}
         <motion.div

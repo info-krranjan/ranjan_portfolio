@@ -183,7 +183,7 @@ export function Resume() {
                         Ranjan_Resume.pdf
                       </h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Last updated: January 2024
+                        Last updated: October 2025
                       </p>
                     </div>
                   </div>

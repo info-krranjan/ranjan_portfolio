@@ -6,6 +6,7 @@ import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import nodemailer from "nodemailer";
 
+
 export async function registerRoutes(app: Express): Promise<Server> {
   // GitHub Projects API
   app.get("/api/github/projects", async (req, res) => {
@@ -78,7 +79,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     // In production, this would serve the actual PDF file
     res.status(200).json({
       message: "Resume download endpoint",
-      downloadUrl: "/assets/Ranjan_Resume.pdf"
+      downloadUrl: "/Ranjan_Resume.pdf" // Placeholder URL
     });
   });
 
