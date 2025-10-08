@@ -1,4 +1,5 @@
 // server/index.ts
+import dotenv from "dotenv";
 import express2 from "express";
 
 // server/routes.ts
@@ -439,6 +440,7 @@ function serveStatic(app2) {
 
 // server/index.ts
 var app = express2();
+dotenv.config();
 app.use(express2.json({
   verify: (req, _res, buf) => {
     req.rawBody = buf;
