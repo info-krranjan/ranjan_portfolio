@@ -78,7 +78,7 @@ export function Hero() {
         >
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4 mt-4"
+            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4 mt-2"
             data-testid="hero-greeting"
           >
             Hi, I'm

@@ -127,7 +127,7 @@ export function Contact() {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -221,7 +221,7 @@ export function Contact() {
                 </form>
               </CardContent>
             </Card>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact Info */}
           <motion.div
